@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="images/spotify.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="main-header">
+            <div class="header-left">
+                <a href="#" class="header-logo" title="Spotify">
+                    <img src="images/spotify.svg" alt="Spotify Logo" class="logo-img">
+                </a>
+            </div>
+
+            <div class="header-center">
+                <a href="#" class="nav-item active" title="Home"><i class="fas fa-home fa-lg"></i></a>
+                <div class="nav-item search-bar" title="Search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="What do you want to play?">
+                </div>
+            </div>
+
+            <div class="header-right">
+                <button class="premium-btn">Explore Premium</button>
+                <button class="install-btn"><i class="fas fa-download"></i> Install App</button>
+                <button class="icon-btn" title="Notifications"><i class="fas fa-bell"></i></button>
+                <button class="icon-btn user-profile-btn" title="Your Profile">
+                    <span>H</span>
+                </button>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <div class="sidebar-library">
+                <div class="library-header">
+                    <div class="library-header-title">
+                        <h3>Your Library</h3>
+                    </div>
+                    <div class="library-header-icons">
+                        <button class="create-icon" title="Create playlist or folder"><i class="fas fa-plus"></i>
+                            Create</button>
+                        <button title="Show more"><i
+                                class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                    </div>
+                </div>
+
+                <div class="library-filters">
+                    <button class="filter-pill">Playlists</button>
+                    <button class="filter-pill">Artists</button>
+                </div>
+
+                <div class="library-options">
+                    <button class="search-icon" title="Search in your Library">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="recents-filter">
+                        <span>Recents</span>
+                        <button title="Recent list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+
+                <div class="library-content">
+                    <ul class="library-playlists">
+                        <li class="playlist-item">
+                            <i class="fas fa-folder"></i>
+                            <span>My Playlists</span>
+                        </li>
+                        <li class="playlist-item">
+                            <i class="fas fa-folder"></i>
+                            <span>Chill Vibes</span>
+                        </li>
+                        <li class="playlist-item">
+                            <i class="fas fa-folder"></i>
+                            <span>Workout Mix</span>
+                        </li>
+                        <li class="playlist-item">
+                            <i class="fas fa-folder"></i>
+                            <span>Top Hits</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <section class="content-section">
+                <h2>Albums</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://placehold.co/150x150/1DB954/FFFFFF?text=Album+1" alt="Album Art">
+                        <h4>Album Title 1</h4>
+                        <p>Artist Name</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://placehold.co/150x150/282828/FFFFFF?text=Album+2" alt="Album Art">
+                        <h4>Album Title 2</h4>
+                        <p>Artist Name</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://placehold.co/150x150/535353/FFFFFF?text=Album+3" alt="Album Art">
+                        <h4>Album Title 3</h4>
+                        <p>Artist Name</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="https://placehold.co/150x150/1ED760/FFFFFF?text=Song+A" alt="Album Art">
+                        <h4>Song A</h4>
+                        <p>Artist Name</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://placehold.co/150x150/B3B3B3/000000?text=Song+B" alt="Album Art">
+                        <h4>Song B</h4>
+                        <p>Artist Name</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="player-bar">
+            <div class="player-song-info">
+                <img src="https://placehold.co/64x64/191414/FFFFFF?text=Song" alt="Current Song Art">
+                <div class="song-details">
+                    <h4>Playing -> Song Name</h4>
+                    <p>Artist</p>
+                </div>
+                <i class="far fa-heart"></i>
+            </div>
+
+            <div class="player-controls">
+                <button><i class="fas fa-random"></i></button>
+                <button><i class="fas fa-step-backward"></i></button>
+                <button class="play-btn"><i class="fas fa-play-circle fa-2x"></i></button>
+                <button><i class="fas fa-step-forward"></i></button>
+                <button><i class="fas fa-redo"></i></button>
+
+                <div class="progress-bar">
+                    <span>0:00</span>
+                    <input type="range" min="0" max="100" value="0">
+                    <span>3:30</span>
+                </div>
+            </div>
+
+            <div class="player-options">
+                <button><i class="fas fa-list-ul"></i></button>
+                <button><i class="fas fa-laptop"></i></button>
+                <button><i class="fas fa-volume-up"></i></button>
+                <input type="range" min="0" max="100" value="80">
+                <button><i class="fas fa-expand"></i></button>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
